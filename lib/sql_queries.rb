@@ -12,9 +12,6 @@ FROM projects AS a
 INNER JOIN  pledges AS b
 WHERE a.id = b.project_id
 ORDER BY a.title DESC"
-
-
-
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
