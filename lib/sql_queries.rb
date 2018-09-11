@@ -27,6 +27,7 @@ def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_
   FROM projects AS a
   INNER JOIN  pledges AS b
   ON a.id = b.project_id
+  GROUP BY a.title
   HAVING a.funding_goal = SUM(b.amount)"
 end
 
