@@ -54,7 +54,6 @@ def selects_the_category_name_and_the_sum_total_of_the_all_its_pledges_for_the_b
    FROM projects as a
    INNER JOIN pledges as b
    ON   a.id = b.project_id
-   WHERE a.category = 'books'
-   GROUP BY a.category"
+   WHERE a.category = 'books'"
 
 end
