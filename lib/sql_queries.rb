@@ -23,7 +23,7 @@ GROUP BY b.name"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
-  "SELECT  a.title, SUM(b.amount), a.funding_goal
+  "SELECT  a.title, SUM(b.amount)- (a.funding_goal)
   FROM projects AS a
   INNER JOIN  pledges AS b
   ON a.id = b.project_id
