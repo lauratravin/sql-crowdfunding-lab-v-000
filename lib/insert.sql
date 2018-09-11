@@ -18,3 +18,16 @@ INSERT INTO users (id, name, age) VALUES (1, 'A', 40),
 (18, 'P', 50),
 (19, 'E', 24),
 (20, 'K', 20);
+
+
+INSERT INTO projects (id, title, category, funding_goal, start_date, end_date) VALUES
+(1, 'Help cats', 'cats', 5000.00, '2013-06-30', '2013-07-30'),
+(2, 'My book ', 'books', 200.00, '2013-01-01', '2014-01-01'),
+(3, 'The next Harry Potter', 'books', 100.00, '2013-05-30', '2015-05-30'),
+(4, 'Animal shelter needs dog food', 'charity', 400.00, '2013-03-14', '2013-06-30'),
+(5, 'plant trees', 'charity', 600.00, '2013-03-20', '2013-09-20'),
+(6, 'kitty food', 'cats', 200.00, '2014-12-30', '2015-12-30'),
+(7, 'Sugar for ants', 'charity', 600.00, '2013-10-02', '2013-10-30'),
+(8, 'Band Kim Kardashian', 'charity', 8100.00, '2014-06-30', '2014-06-31'),
+(9, 'Traven to mars', 'charity', 30.00, '2013-06-30', '2013-09-30'),
+(10, 'Clothes for squirrels', 'charity', 500.00, '2012-03-20', '2013-06-30');
