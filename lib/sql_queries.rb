@@ -7,7 +7,7 @@
 # Make sure each ruby method returns a string containing a valid SQL statement.
 
 def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_name
-"SELECT a.title, b.amout
+"SELECT a.title, b.amount
 FROM projects AS a
 INNER JOIN  pledges AS b
 WHERE a.id = b.project_id
