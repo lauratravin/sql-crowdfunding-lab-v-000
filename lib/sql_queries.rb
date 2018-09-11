@@ -15,7 +15,11 @@ GROUP BY a.title"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
-"Write your SQL query Here"
+"SELECT  b.name, b.age, SUM(a.amount)
+FROM pledges AS a
+INNER JOIN  users AS b
+ON a.user_id = b.id
+GROUP BY b.name"
 end
 
 def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_funding_goal
