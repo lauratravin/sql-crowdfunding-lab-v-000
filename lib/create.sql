@@ -1,4 +1,4 @@
-CREATE TABLE users (id INTEGER,
+CREATE TABLE users (id INTEGER PRIMARY KEY,
                     name TEXT,
                     age INTEGER);
 
