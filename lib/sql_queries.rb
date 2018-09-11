@@ -32,12 +32,12 @@ def selects_the_titles_and_amount_over_goal_of_all_projects_that_have_met_their_
 end
 
 def selects_user_names_and_amounts_of_all_pledges_grouped_by_name_then_orders_them_by_the_amount_and_users_name
-"SELECT a.name, SUM(b.amount)
+"SELECT a.name, SUM(b.amount) as suma
  FROM users as a
  INNER JOIN pledges as b
  ON   a.id = b.user_id
  GROUP BY a.name
- ORDER BY b.amount,
+ ORDER BY suma,
           a.name "
 
 end
