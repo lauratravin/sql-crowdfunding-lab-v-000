@@ -1,6 +1,6 @@
-"CREATE TABLE users (id INTEGER PRIMARY KEY,
+CREATE TABLE users (id INTEGER PRIMARY KEY,
                     name TEXT,
-                    age INTEGER);"
+                    age INTEGER);
 
 CREATE TABLE projects
 
