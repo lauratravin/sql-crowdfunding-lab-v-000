@@ -11,7 +11,7 @@ def selects_the_titles_of_all_projects_and_their_pledge_amounts_alphabetized_by_
 FROM projects AS a
 INNER JOIN  pledges AS b
 ON a.id = b.project_id
-GROUP BY a.title ASC"
+GROUP BY a.title ASC;"
 end
 
 def selects_the_user_name_age_and_pledge_amount_for_all_pledges_alphabetized_by_name
